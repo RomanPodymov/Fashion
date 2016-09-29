@@ -18,7 +18,6 @@
 		D52158781C95B369004EE4BE /* Fashion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158761C95B369004EE4BE /* Fashion.swift */; };
 		D521588D1C95CBFC004EE4BE /* Styleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D521588C1C95CBFC004EE4BE /* Styleable.swift */; };
 		D521588E1C95CBFC004EE4BE /* Styleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D521588C1C95CBFC004EE4BE /* Styleable.swift */; };
-		D54B580D1C95DCA80029F7BC /* Sugar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D54B580C1C95DCA80029F7BC /* Sugar.framework */; };
 		D54B580F1C95DCF90029F7BC /* UIView+SharedStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54B580E1C95DCF90029F7BC /* UIView+SharedStyles.swift */; };
 		D5A516D71C98127E00B5442D /* FashionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516CB1C98127E00B5442D /* FashionSpec.swift */; };
 		D5A516D81C98127E00B5442D /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516CD1C98127E00B5442D /* TestHelpers.swift */; };
@@ -39,6 +38,8 @@
 		D5C629851C3A893F007F7B7C /* NSView+Styleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C629841C3A893F007F7B7C /* NSView+Styleable.swift */; };
 		D5C629871C3A89A8007F7B7C /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C629861C3A89A8007F7B7C /* Style.swift */; };
 		D5C629881C3A89A8007F7B7C /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C629861C3A89A8007F7B7C /* Style.swift */; };
+		D5CD50E21D9DB8DA0031C666 /* Swizzler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CD50E11D9DB8DA0031C666 /* Swizzler.swift */; };
+		D5CD50E31D9DB8DA0031C666 /* Swizzler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CD50E11D9DB8DA0031C666 /* Swizzler.swift */; };
 		D5F2E6A21CC98D5200D180B9 /* StringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F2E6A11CC98D5200D180B9 /* StringConvertible.swift */; };
 		D5F2E6A31CC98D5200D180B9 /* StringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F2E6A11CC98D5200D180B9 /* StringConvertible.swift */; };
 /* End PBXBuildFile section */
@@ -69,7 +70,6 @@
 		D52158731C95B117004EE4BE /* StyleManaging.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StyleManaging.swift; sourceTree = "<group>"; };
 		D52158761C95B369004EE4BE /* Fashion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fashion.swift; sourceTree = "<group>"; };
 		D521588C1C95CBFC004EE4BE /* Styleable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Styleable.swift; sourceTree = "<group>"; };
-		D54B580C1C95DCA80029F7BC /* Sugar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sugar.framework; path = Carthage/Build/iOS/Sugar.framework; sourceTree = "<group>"; };
 		D54B580E1C95DCF90029F7BC /* UIView+SharedStyles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SharedStyles.swift"; sourceTree = "<group>"; };
 		D5A516C31C98125100B5442D /* Info-iOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-iOS.plist"; sourceTree = "<group>"; };
 		D5A516C41C98125100B5442D /* Info-Mac.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-Mac.plist"; sourceTree = "<group>"; };
@@ -95,6 +95,7 @@
 		D5C629821C3A892A007F7B7C /* UIView+Styleable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Styleable.swift"; sourceTree = "<group>"; };
 		D5C629841C3A893F007F7B7C /* NSView+Styleable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSView+Styleable.swift"; sourceTree = "<group>"; };
 		D5C629861C3A89A8007F7B7C /* Style.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Style.swift; sourceTree = "<group>"; };
+		D5CD50E11D9DB8DA0031C666 /* Swizzler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Swizzler.swift; sourceTree = "<group>"; };
 		D5F2E6A11CC98D5200D180B9 /* StringConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringConvertible.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,7 +104,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D54B580D1C95DCA80029F7BC /* Sugar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,7 +140,6 @@
 		D52158721C95B0AE004EE4BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D54B580C1C95DCA80029F7BC /* Sugar.framework */,
 				D5C629791C3A879F007F7B7C /* Quick.framework */,
 				D5C6297A1C3A879F007F7B7C /* Nimble.framework */,
 				D5C629751C3A878E007F7B7C /* Quick.framework */,
@@ -262,6 +261,7 @@
 				D521586F1C94A444004EE4BE /* Stylist.swift */,
 				D52158761C95B369004EE4BE /* Fashion.swift */,
 				D5F2E6A11CC98D5200D180B9 /* StringConvertible.swift */,
+				D5CD50E11D9DB8DA0031C666 /* Swizzler.swift */,
 			);
 			path = Shared;
 			sourceTree = "<group>";
@@ -294,7 +294,6 @@
 				D5B2E89B1C3A780C00C0327D /* Frameworks */,
 				D5B2E89C1C3A780C00C0327D /* Headers */,
 				D5B2E89D1C3A780C00C0327D /* Resources */,
-				D54B580B1C95DC3D0029F7BC /* Copy frameworks with Carthage */,
 			);
 			buildRules = (
 			);
@@ -368,14 +367,16 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0720;
-				LastUpgradeCheck = 0720;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Hyper Interaktiv AS";
 				TargetAttributes = {
 					D5B2E89E1C3A780C00C0327D = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 					};
 					D5B2E8A81C3A780C00C0327D = {
 						CreatedOnToolsVersion = 7.2;
+						LastSwiftMigration = 0800;
 					};
 					D5C6293F1C3A7FAA007F7B7C = {
 						CreatedOnToolsVersion = 7.2;
@@ -437,21 +438,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		D54B580B1C95DC3D0029F7BC /* Copy frameworks with Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/Sugar.framework",
-			);
-			name = "Copy frameworks with Carthage";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
 		D5C629731C3A86E3007F7B7C /* Copy frameworks with Carthage */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -491,6 +477,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D5CD50E21D9DB8DA0031C666 /* Swizzler.swift in Sources */,
 				D5C629831C3A892A007F7B7C /* UIView+Styleable.swift in Sources */,
 				D5C629871C3A89A8007F7B7C /* Style.swift in Sources */,
 				D52158701C94A444004EE4BE /* Stylist.swift in Sources */,
@@ -532,6 +519,7 @@
 				D52158691C948CE2004EE4BE /* Stylesheet.swift in Sources */,
 				D5F2E6A31CC98D5200D180B9 /* StringConvertible.swift in Sources */,
 				D521588E1C95CBFC004EE4BE /* Styleable.swift in Sources */,
+				D5CD50E31D9DB8DA0031C666 /* Swizzler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -571,8 +559,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -619,8 +609,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -640,6 +632,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -651,14 +644,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Fashion/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -667,6 +658,7 @@
 				PRODUCT_NAME = Fashion;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -674,14 +666,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/iOS",
-				);
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "$(SRCROOT)/Fashion/Info-iOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
@@ -689,6 +679,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadymmarkov.Fashion-iOS";
 				PRODUCT_NAME = Fashion;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -705,6 +696,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.FashionTests;
 				PRODUCT_NAME = "Fashion-Tests-iOS";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -720,6 +712,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.FashionTests;
 				PRODUCT_NAME = "Fashion-Tests-iOS";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -727,7 +720,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;
@@ -750,7 +743,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_IDENTITY = "";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 1;

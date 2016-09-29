@@ -17,7 +17,7 @@ class StylesheetSpec: QuickSpec {
       describe("#register") {
         it("registers stylization closure with a specified style name") {
           stylesheet.register(style, stylization: { (button: UIButton) in
-            button.backgroundColor = UIColor.redColor()
+            button.backgroundColor = UIColor.red
           })
 
           expect(Stylist.master.styles[style]).toNot(beNil())
@@ -27,7 +27,7 @@ class StylesheetSpec: QuickSpec {
       describe("#unregister") {
         it("unregisters stylization closure") {
           stylesheet.register(style, stylization: { (button: UIButton) in
-            button.backgroundColor = UIColor.redColor()
+            button.backgroundColor = UIColor.red
           })
 
           expect(Stylist.master.styles[style]).toNot(beNil())
@@ -41,7 +41,7 @@ class StylesheetSpec: QuickSpec {
       describe("#share") {
         it("registers shared stylization closure for the specified type") {
           stylesheet.share { (button: UIButton) in
-            button.backgroundColor = UIColor.redColor()
+            button.backgroundColor = UIColor.red
           }
 
           expect(Stylist.master.sharedStyles["UIButton"]).toNot(beNil())
@@ -51,7 +51,7 @@ class StylesheetSpec: QuickSpec {
       describe("#unshare") {
         it("unregisters shared stylization closure for the specified type") {
           stylesheet.share { (button: UIButton) in
-            button.backgroundColor = UIColor.redColor()
+            button.backgroundColor = UIColor.red
           }
 
           expect(Stylist.master.sharedStyles["UIButton"]).toNot(beNil())

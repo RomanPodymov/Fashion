@@ -15,7 +15,7 @@ class FashionSpec: QuickSpec {
 
       describe("#register") {
         it("registers passed stylesheets") {
-          Fashion.register([stylesheet])
+          Fashion.register(stylesheets: [stylesheet])
 
           expect(Stylist.master.styles[stylesheet.style]).toNot(beNil())
         }
