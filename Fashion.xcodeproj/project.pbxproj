@@ -29,11 +29,6 @@
 		D5A516DE1C98127E00B5442D /* UIView+SharedStylesSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516D31C98127E00B5442D /* UIView+SharedStylesSpec.swift */; };
 		D5A516DF1C98127E00B5442D /* UIView+StyleableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516D41C98127E00B5442D /* UIView+StyleableSpec.swift */; };
 		D5B2E8AA1C3A780C00C0327D /* Fashion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5B2E89F1C3A780C00C0327D /* Fashion.framework */; };
-		D5C6294A1C3A7FAA007F7B7C /* Fashion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629401C3A7FAA007F7B7C /* Fashion.framework */; };
-		D5C629771C3A878E007F7B7C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629751C3A878E007F7B7C /* Quick.framework */; };
-		D5C629781C3A878E007F7B7C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629761C3A878E007F7B7C /* Nimble.framework */; };
-		D5C6297B1C3A879F007F7B7C /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C629791C3A879F007F7B7C /* Quick.framework */; };
-		D5C6297C1C3A879F007F7B7C /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D5C6297A1C3A879F007F7B7C /* Nimble.framework */; };
 		D5C629831C3A892A007F7B7C /* UIView+Styleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C629821C3A892A007F7B7C /* UIView+Styleable.swift */; };
 		D5C629851C3A893F007F7B7C /* NSView+Styleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C629841C3A893F007F7B7C /* NSView+Styleable.swift */; };
 		D5C629871C3A89A8007F7B7C /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C629861C3A89A8007F7B7C /* Style.swift */; };
@@ -51,13 +46,6 @@
 			proxyType = 1;
 			remoteGlobalIDString = D5B2E89E1C3A780C00C0327D;
 			remoteInfo = Fashion;
-		};
-		D5C6294B1C3A7FAA007F7B7C /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D5B2E8961C3A780C00C0327D /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D5C6293F1C3A7FAA007F7B7C;
-			remoteInfo = "Fashion-Mac";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -87,7 +75,6 @@
 		D5B2E89F1C3A780C00C0327D /* Fashion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fashion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5B2E8A91C3A780C00C0327D /* Fashion-Tests-iOS.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fashion-Tests-iOS.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C629401C3A7FAA007F7B7C /* Fashion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fashion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		D5C629491C3A7FAA007F7B7C /* Fashion-Tests-Mac.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fashion-Tests-Mac.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D5C629751C3A878E007F7B7C /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/iOS/Quick.framework; sourceTree = "<group>"; };
 		D5C629761C3A878E007F7B7C /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/iOS/Nimble.framework; sourceTree = "<group>"; };
 		D5C629791C3A879F007F7B7C /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/Mac/Quick.framework; sourceTree = "<group>"; };
@@ -111,8 +98,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D5C629771C3A878E007F7B7C /* Quick.framework in Frameworks */,
-				D5C629781C3A878E007F7B7C /* Nimble.framework in Frameworks */,
 				D5B2E8AA1C3A780C00C0327D /* Fashion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -121,16 +106,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D5C629461C3A7FAA007F7B7C /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D5C6297B1C3A879F007F7B7C /* Quick.framework in Frameworks */,
-				D5C6297C1C3A879F007F7B7C /* Nimble.framework in Frameworks */,
-				D5C6294A1C3A7FAA007F7B7C /* Fashion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -218,7 +193,6 @@
 				D5B2E89F1C3A780C00C0327D /* Fashion.framework */,
 				D5B2E8A91C3A780C00C0327D /* Fashion-Tests-iOS.xctest */,
 				D5C629401C3A7FAA007F7B7C /* Fashion.framework */,
-				D5C629491C3A7FAA007F7B7C /* Fashion-Tests-Mac.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -341,25 +315,6 @@
 			productReference = D5C629401C3A7FAA007F7B7C /* Fashion.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		D5C629481C3A7FAA007F7B7C /* Fashion-Mac-Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D5C629541C3A7FAA007F7B7C /* Build configuration list for PBXNativeTarget "Fashion-Mac-Tests" */;
-			buildPhases = (
-				D5C629451C3A7FAA007F7B7C /* Sources */,
-				D5C629461C3A7FAA007F7B7C /* Frameworks */,
-				D5C629471C3A7FAA007F7B7C /* Resources */,
-				D5C629741C3A8717007F7B7C /* Copy frameworks with Carthage */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D5C6294C1C3A7FAA007F7B7C /* PBXTargetDependency */,
-			);
-			name = "Fashion-Mac-Tests";
-			productName = "Fashion-MacTests";
-			productReference = D5C629491C3A7FAA007F7B7C /* Fashion-Tests-Mac.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -381,9 +336,6 @@
 					D5C6293F1C3A7FAA007F7B7C = {
 						CreatedOnToolsVersion = 7.2;
 					};
-					D5C629481C3A7FAA007F7B7C = {
-						CreatedOnToolsVersion = 7.2;
-					};
 				};
 			};
 			buildConfigurationList = D5B2E8991C3A780C00C0327D /* Build configuration list for PBXProject "Fashion" */;
@@ -401,7 +353,6 @@
 				D5B2E89E1C3A780C00C0327D /* Fashion-iOS */,
 				D5C6293F1C3A7FAA007F7B7C /* Fashion-Mac */,
 				D5B2E8A81C3A780C00C0327D /* Fashion-iOS-Tests */,
-				D5C629481C3A7FAA007F7B7C /* Fashion-Mac-Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -428,13 +379,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D5C629471C3A7FAA007F7B7C /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -446,22 +390,6 @@
 			inputPaths = (
 				"$(SRCROOT)/Carthage/Build/iOS/Quick.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Nimble.framework",
-			);
-			name = "Copy frameworks with Carthage";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "/usr/local/bin/carthage copy-frameworks";
-		};
-		D5C629741C3A8717007F7B7C /* Copy frameworks with Carthage */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/Mac/Quick.framework",
-				"$(SRCROOT)/Carthage/Build/Mac/Nimble.framework",
 			);
 			name = "Copy frameworks with Carthage";
 			outputPaths = (
@@ -523,13 +451,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D5C629451C3A7FAA007F7B7C /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -537,11 +458,6 @@
 			isa = PBXTargetDependency;
 			target = D5B2E89E1C3A780C00C0327D /* Fashion-iOS */;
 			targetProxy = D5B2E8AB1C3A780C00C0327D /* PBXContainerItemProxy */;
-		};
-		D5C6294C1C3A7FAA007F7B7C /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D5C6293F1C3A7FAA007F7B7C /* Fashion-Mac */;
-			targetProxy = D5C6294B1C3A7FAA007F7B7C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -736,6 +652,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -758,42 +675,7 @@
 				PRODUCT_NAME = Fashion;
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
-			};
-			name = Release;
-		};
-		D5C629551C3A7FAA007F7B7C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/FashionTests/Info-Mac.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.Fashion-MacTests";
-				PRODUCT_NAME = "Fashion-Tests-Mac";
-				SDKROOT = macosx;
-			};
-			name = Debug;
-		};
-		D5C629561C3A7FAA007F7B7C /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "-";
-				COMBINE_HIDPI_IMAGES = YES;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Carthage/Build/Mac",
-				);
-				INFOPLIST_FILE = "$(SRCROOT)/FashionTests/Info-Mac.plist";
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.11;
-				PRODUCT_BUNDLE_IDENTIFIER = "no.hyper.Fashion-MacTests";
-				PRODUCT_NAME = "Fashion-Tests-Mac";
-				SDKROOT = macosx;
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -832,15 +714,6 @@
 			buildConfigurations = (
 				D5C629521C3A7FAA007F7B7C /* Debug */,
 				D5C629531C3A7FAA007F7B7C /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D5C629541C3A7FAA007F7B7C /* Build configuration list for PBXNativeTarget "Fashion-Mac-Tests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D5C629551C3A7FAA007F7B7C /* Debug */,
-				D5C629561C3A7FAA007F7B7C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
