@@ -1,27 +1,26 @@
 import UIKit
-import Sugar
 
 extension UIView {
 
-  private struct AssociatedKeys {
+  fileprivate struct AssociatedKeys {
     static var stylesApplied = "fashion_StylesAppliedAssociatedKey"
   }
 
   // MARK: - Method Swizzling
 
-  override public class func initialize() {
+  override open class func initialize() {
     struct Static {
-      static var token: dispatch_once_t = 0
+      static let token = NSUUID().uuidString
     }
 
     if self !== UIView.self { return }
 
-    dispatch_once(&Static.token) {
-      Swizzler.swizzle("willMoveToSuperview:", cls: self, prefix: "fashion")
+    DispatchQueue.once(token: Static.token) {
+      Swizzler.swizzle(method: "willMoveToSuperview:", cls: self, prefix: "fashion")
     }
   }
 
-  func fashion_willMoveToSuperview(newSuperview: UIView?) {
+  func fashion_willMoveToSuperview(_ newSuperview: UIView?) {
     fashion_willMoveToSuperview(newSuperview)
 
     guard runtimeStyles else {
@@ -39,7 +38,7 @@ extension UIView {
     }
   }
 
-  private var stylesApplied: Bool? {
+  fileprivate var stylesApplied: Bool? {
     get {
       return objc_getAssociatedObject(self, &AssociatedKeys.stylesApplied) as? Bool
     }
