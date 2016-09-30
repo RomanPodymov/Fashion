@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
   s.name             = "Fashion"
   s.summary          = "Fashion accessories and beauty tools to share and reuse UI styles in a Swifty way"
-  s.version          = "1.1.0"
+  s.version          = "2.0.0"
   s.homepage         = "https://github.com/vadymmarkov/Fashion"
   s.license          = 'MIT'
   s.author           = { "Vadym Markov" => "markov.vadym@gmail.com" }
