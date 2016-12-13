@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D270E9061E0062C3008E7C5F /* Fashion-tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D270E8FD1E0062C3008E7C5F /* Fashion-tvOS.framework */; };
+		D270E9151E006321008E7C5F /* Info-tvOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = D270E9141E006321008E7C5F /* Info-tvOS.plist */; };
+		D270E9171E006338008E7C5F /* Info-tvOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = D270E9161E006338008E7C5F /* Info-tvOS.plist */; };
+		D270E9191E0063A7008E7C5F /* Styleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D521588C1C95CBFC004EE4BE /* Styleable.swift */; };
+		D270E91A1E0063A7008E7C5F /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C629861C3A89A8007F7B7C /* Style.swift */; };
+		D270E91B1E0063A7008E7C5F /* StyleManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158731C95B117004EE4BE /* StyleManaging.swift */; };
+		D270E91C1E0063A7008E7C5F /* Stylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158671C948CE2004EE4BE /* Stylesheet.swift */; };
+		D270E91D1E0063A7008E7C5F /* Stylist.swift in Sources */ = {isa = PBXBuildFile; fileRef = D521586F1C94A444004EE4BE /* Stylist.swift */; };
+		D270E91E1E0063A7008E7C5F /* Fashion.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158761C95B369004EE4BE /* Fashion.swift */; };
+		D270E91F1E0063A7008E7C5F /* StringConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5F2E6A11CC98D5200D180B9 /* StringConvertible.swift */; };
+		D270E9201E0063A7008E7C5F /* Swizzler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5CD50E11D9DB8DA0031C666 /* Swizzler.swift */; };
+		D270E9211E0063AF008E7C5F /* UIView+Styleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C629821C3A892A007F7B7C /* UIView+Styleable.swift */; };
+		D270E9221E0063AF008E7C5F /* UIView+SharedStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54B580E1C95DCF90029F7BC /* UIView+SharedStyles.swift */; };
+		D270E9231E0063AF008E7C5F /* Stylesheet+UIAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D521586D1C949EF5004EE4BE /* Stylesheet+UIAppearance.swift */; };
 		D52158681C948CE2004EE4BE /* Stylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158671C948CE2004EE4BE /* Stylesheet.swift */; };
 		D52158691C948CE2004EE4BE /* Stylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158671C948CE2004EE4BE /* Stylesheet.swift */; };
 		D521586E1C949EF5004EE4BE /* Stylesheet+UIAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D521586D1C949EF5004EE4BE /* Stylesheet+UIAppearance.swift */; };
@@ -40,6 +54,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		D270E9071E0062C3008E7C5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D5B2E8961C3A780C00C0327D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D270E8FC1E0062C3008E7C5F;
+			remoteInfo = "Fashion-tvOS";
+		};
 		D5B2E8AB1C3A780C00C0327D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D5B2E8961C3A780C00C0327D /* Project object */;
@@ -50,6 +71,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D270E8FD1E0062C3008E7C5F /* Fashion-tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Fashion-tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D270E9051E0062C3008E7C5F /* Fashion-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fashion-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D270E9141E006321008E7C5F /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		D270E9161E006338008E7C5F /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		D500FD111C3AABED00782D78 /* Playground-iOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-iOS.playground"; sourceTree = "<group>"; };
 		D500FD121C3AAC8E00782D78 /* Playground-Mac.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-Mac.playground"; sourceTree = "<group>"; };
 		D52158671C948CE2004EE4BE /* Stylesheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stylesheet.swift; sourceTree = "<group>"; };
@@ -87,6 +112,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D270E8F91E0062C3008E7C5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D270E9021E0062C3008E7C5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D270E9061E0062C3008E7C5F /* Fashion-tvOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5B2E89B1C3A780C00C0327D /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -112,6 +152,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D270E9181E0063A0008E7C5F /* tvOS */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = tvOS;
+			sourceTree = "<group>";
+		};
 		D52158721C95B0AE004EE4BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -126,6 +173,7 @@
 		D5A516C21C98125100B5442D /* Fashion */ = {
 			isa = PBXGroup;
 			children = (
+				D270E9141E006321008E7C5F /* Info-tvOS.plist */,
 				D5A516C31C98125100B5442D /* Info-iOS.plist */,
 				D5A516C41C98125100B5442D /* Info-Mac.plist */,
 			);
@@ -168,6 +216,7 @@
 		D5A516E01C98129500B5442D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D270E9161E006338008E7C5F /* Info-tvOS.plist */,
 				D5A516C81C98127E00B5442D /* Info-iOS.plist */,
 				D5A516C91C98127E00B5442D /* Info-Mac.plist */,
 			);
@@ -193,6 +242,8 @@
 				D5B2E89F1C3A780C00C0327D /* Fashion.framework */,
 				D5B2E8A91C3A780C00C0327D /* Fashion-Tests-iOS.xctest */,
 				D5C629401C3A7FAA007F7B7C /* Fashion.framework */,
+				D270E8FD1E0062C3008E7C5F /* Fashion-tvOS.framework */,
+				D270E9051E0062C3008E7C5F /* Fashion-tvOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -200,6 +251,7 @@
 		D5C629691C3A809D007F7B7C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				D270E9181E0063A0008E7C5F /* tvOS */,
 				D5C6296A1C3A809D007F7B7C /* iOS */,
 				D5C6296C1C3A809D007F7B7C /* Mac */,
 				D5C6296E1C3A809D007F7B7C /* Shared */,
@@ -243,6 +295,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
+		D270E8FA1E0062C3008E7C5F /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5B2E89C1C3A780C00C0327D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
@@ -260,6 +319,42 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		D270E8FC1E0062C3008E7C5F /* Fashion-tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D270E9121E0062C3008E7C5F /* Build configuration list for PBXNativeTarget "Fashion-tvOS" */;
+			buildPhases = (
+				D270E8F81E0062C3008E7C5F /* Sources */,
+				D270E8F91E0062C3008E7C5F /* Frameworks */,
+				D270E8FA1E0062C3008E7C5F /* Headers */,
+				D270E8FB1E0062C3008E7C5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fashion-tvOS";
+			productName = "Fashion-tvOS";
+			productReference = D270E8FD1E0062C3008E7C5F /* Fashion-tvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		D270E9041E0062C3008E7C5F /* Fashion-tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D270E9131E0062C3008E7C5F /* Build configuration list for PBXNativeTarget "Fashion-tvOSTests" */;
+			buildPhases = (
+				D270E9011E0062C3008E7C5F /* Sources */,
+				D270E9021E0062C3008E7C5F /* Frameworks */,
+				D270E9031E0062C3008E7C5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D270E9081E0062C3008E7C5F /* PBXTargetDependency */,
+			);
+			name = "Fashion-tvOSTests";
+			productName = "Fashion-tvOSTests";
+			productReference = D270E9051E0062C3008E7C5F /* Fashion-tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		D5B2E89E1C3A780C00C0327D /* Fashion-iOS */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D5B2E8B31C3A780C00C0327D /* Build configuration list for PBXNativeTarget "Fashion-iOS" */;
@@ -323,10 +418,18 @@
 		D5B2E8961C3A780C00C0327D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0720;
+				LastSwiftUpdateCheck = 0810;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Hyper Interaktiv AS";
 				TargetAttributes = {
+					D270E8FC1E0062C3008E7C5F = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					D270E9041E0062C3008E7C5F = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
 					D5B2E89E1C3A780C00C0327D = {
 						CreatedOnToolsVersion = 7.2;
 						LastSwiftMigration = 0800;
@@ -355,11 +458,29 @@
 				D5B2E89E1C3A780C00C0327D /* Fashion-iOS */,
 				D5C6293F1C3A7FAA007F7B7C /* Fashion-Mac */,
 				D5B2E8A81C3A780C00C0327D /* Fashion-iOS-Tests */,
+				D270E8FC1E0062C3008E7C5F /* Fashion-tvOS */,
+				D270E9041E0062C3008E7C5F /* Fashion-tvOSTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D270E8FB1E0062C3008E7C5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D270E9151E006321008E7C5F /* Info-tvOS.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D270E9031E0062C3008E7C5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D270E9171E006338008E7C5F /* Info-tvOS.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5B2E89D1C3A780C00C0327D /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -431,6 +552,31 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D270E8F81E0062C3008E7C5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D270E9191E0063A7008E7C5F /* Styleable.swift in Sources */,
+				D270E9231E0063AF008E7C5F /* Stylesheet+UIAppearance.swift in Sources */,
+				D270E9221E0063AF008E7C5F /* UIView+SharedStyles.swift in Sources */,
+				D270E91C1E0063A7008E7C5F /* Stylesheet.swift in Sources */,
+				D270E91E1E0063A7008E7C5F /* Fashion.swift in Sources */,
+				D270E9201E0063A7008E7C5F /* Swizzler.swift in Sources */,
+				D270E91F1E0063A7008E7C5F /* StringConvertible.swift in Sources */,
+				D270E91D1E0063A7008E7C5F /* Stylist.swift in Sources */,
+				D270E91B1E0063A7008E7C5F /* StyleManaging.swift in Sources */,
+				D270E9211E0063AF008E7C5F /* UIView+Styleable.swift in Sources */,
+				D270E91A1E0063A7008E7C5F /* Style.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D270E9011E0062C3008E7C5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D5B2E89A1C3A780C00C0327D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -484,6 +630,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		D270E9081E0062C3008E7C5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D270E8FC1E0062C3008E7C5F /* Fashion-tvOS */;
+			targetProxy = D270E9071E0062C3008E7C5F /* PBXContainerItemProxy */;
+		};
 		D5B2E8AC1C3A780C00C0327D /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = D5B2E89E1C3A780C00C0327D /* Fashion-iOS */;
@@ -492,6 +643,90 @@
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
+		D270E90E1E0062C3008E7C5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Fashion-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vadymmarkov.Fashion-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		D270E90F1E0062C3008E7C5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Fashion-tvOS/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vadymmarkov.Fashion-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
+		D270E9101E0062C3008E7C5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				INFOPLIST_FILE = "Fashion-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vadymmarkov.Fashion-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Debug;
+		};
+		D270E9111E0062C3008E7C5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				INFOPLIST_FILE = "Fashion-tvOSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.vadymmarkov.Fashion-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				SWIFT_VERSION = 3.0;
+				TVOS_DEPLOYMENT_TARGET = 10.0;
+			};
+			name = Release;
+		};
 		D5B2E8B11C3A780C00C0327D /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -712,6 +947,22 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D270E9121E0062C3008E7C5F /* Build configuration list for PBXNativeTarget "Fashion-tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D270E90E1E0062C3008E7C5F /* Debug */,
+				D270E90F1E0062C3008E7C5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D270E9131E0062C3008E7C5F /* Build configuration list for PBXNativeTarget "Fashion-tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D270E9101E0062C3008E7C5F /* Debug */,
+				D270E9111E0062C3008E7C5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D5B2E8991C3A780C00C0327D /* Build configuration list for PBXProject "Fashion" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
