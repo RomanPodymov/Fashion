@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D270E9061E0062C3008E7C5F /* Fashion-tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D270E8FD1E0062C3008E7C5F /* Fashion-tvOS.framework */; };
-		D270E9151E006321008E7C5F /* Info-tvOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = D270E9141E006321008E7C5F /* Info-tvOS.plist */; };
-		D270E9171E006338008E7C5F /* Info-tvOS.plist in Resources */ = {isa = PBXBuildFile; fileRef = D270E9161E006338008E7C5F /* Info-tvOS.plist */; };
+		D270E9061E0062C3008E7C5F /* Fashion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D270E8FD1E0062C3008E7C5F /* Fashion.framework */; };
 		D270E9191E0063A7008E7C5F /* Styleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D521588C1C95CBFC004EE4BE /* Styleable.swift */; };
 		D270E91A1E0063A7008E7C5F /* Style.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C629861C3A89A8007F7B7C /* Style.swift */; };
 		D270E91B1E0063A7008E7C5F /* StyleManaging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158731C95B117004EE4BE /* StyleManaging.swift */; };
@@ -71,7 +69,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D270E8FD1E0062C3008E7C5F /* Fashion-tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = "Fashion-tvOS.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D270E8FD1E0062C3008E7C5F /* Fashion.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fashion.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D270E9051E0062C3008E7C5F /* Fashion-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fashion-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D270E9141E006321008E7C5F /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		D270E9161E006338008E7C5F /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
@@ -123,7 +121,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D270E9061E0062C3008E7C5F /* Fashion-tvOS.framework in Frameworks */,
+				D270E9061E0062C3008E7C5F /* Fashion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,7 +240,7 @@
 				D5B2E89F1C3A780C00C0327D /* Fashion.framework */,
 				D5B2E8A91C3A780C00C0327D /* Fashion-Tests-iOS.xctest */,
 				D5C629401C3A7FAA007F7B7C /* Fashion.framework */,
-				D270E8FD1E0062C3008E7C5F /* Fashion-tvOS.framework */,
+				D270E8FD1E0062C3008E7C5F /* Fashion.framework */,
 				D270E9051E0062C3008E7C5F /* Fashion-tvOSTests.xctest */,
 			);
 			name = Products;
@@ -334,7 +332,7 @@
 			);
 			name = "Fashion-tvOS";
 			productName = "Fashion-tvOS";
-			productReference = D270E8FD1E0062C3008E7C5F /* Fashion-tvOS.framework */;
+			productReference = D270E8FD1E0062C3008E7C5F /* Fashion.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		D270E9041E0062C3008E7C5F /* Fashion-tvOSTests */ = {
@@ -469,7 +467,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D270E9151E006321008E7C5F /* Info-tvOS.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,7 +474,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D270E9171E006338008E7C5F /* Info-tvOS.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -654,11 +650,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Fashion-tvOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Fashion/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadymmarkov.Fashion-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Fashion;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
@@ -679,11 +675,11 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Fashion-tvOS/Info.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Fashion/Info-tvOS.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadymmarkov.Fashion-tvOS";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Fashion;
 				SDKROOT = appletvos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 3.0;
