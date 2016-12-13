@@ -19,6 +19,17 @@
 		D270E9211E0063AF008E7C5F /* UIView+Styleable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5C629821C3A892A007F7B7C /* UIView+Styleable.swift */; };
 		D270E9221E0063AF008E7C5F /* UIView+SharedStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D54B580E1C95DCF90029F7BC /* UIView+SharedStyles.swift */; };
 		D270E9231E0063AF008E7C5F /* Stylesheet+UIAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D521586D1C949EF5004EE4BE /* Stylesheet+UIAppearance.swift */; };
+		D270E9241E006491008E7C5F /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516CD1C98127E00B5442D /* TestHelpers.swift */; };
+		D270E9251E006491008E7C5F /* FashionSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516CB1C98127E00B5442D /* FashionSpec.swift */; };
+		D270E9261E006491008E7C5F /* StyleableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516CE1C98127E00B5442D /* StyleableSpec.swift */; };
+		D270E9271E006491008E7C5F /* Stylesheet+UIAppearanceSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516CF1C98127E00B5442D /* Stylesheet+UIAppearanceSpec.swift */; };
+		D270E9281E006491008E7C5F /* StylesheetSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516D01C98127E00B5442D /* StylesheetSpec.swift */; };
+		D270E9291E006491008E7C5F /* StyleSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516D11C98127E00B5442D /* StyleSpec.swift */; };
+		D270E92A1E006491008E7C5F /* StylistSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516D21C98127E00B5442D /* StylistSpec.swift */; };
+		D270E92B1E006491008E7C5F /* UIView+SharedStylesSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516D31C98127E00B5442D /* UIView+SharedStylesSpec.swift */; };
+		D270E92C1E006491008E7C5F /* UIView+StyleableSpec.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516D41C98127E00B5442D /* UIView+StyleableSpec.swift */; };
+		D270E92F1E00652D008E7C5F /* Nimble.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D270E92D1E00652D008E7C5F /* Nimble.framework */; };
+		D270E9301E00652D008E7C5F /* Quick.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D270E92E1E00652D008E7C5F /* Quick.framework */; };
 		D52158681C948CE2004EE4BE /* Stylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158671C948CE2004EE4BE /* Stylesheet.swift */; };
 		D52158691C948CE2004EE4BE /* Stylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158671C948CE2004EE4BE /* Stylesheet.swift */; };
 		D521586E1C949EF5004EE4BE /* Stylesheet+UIAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D521586D1C949EF5004EE4BE /* Stylesheet+UIAppearance.swift */; };
@@ -73,6 +84,8 @@
 		D270E9051E0062C3008E7C5F /* Fashion-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fashion-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D270E9141E006321008E7C5F /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
 		D270E9161E006338008E7C5F /* Info-tvOS.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Info-tvOS.plist"; sourceTree = "<group>"; };
+		D270E92D1E00652D008E7C5F /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = Carthage/Build/tvOS/Nimble.framework; sourceTree = "<group>"; };
+		D270E92E1E00652D008E7C5F /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = Carthage/Build/tvOS/Quick.framework; sourceTree = "<group>"; };
 		D500FD111C3AABED00782D78 /* Playground-iOS.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-iOS.playground"; sourceTree = "<group>"; };
 		D500FD121C3AAC8E00782D78 /* Playground-Mac.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = "Playground-Mac.playground"; sourceTree = "<group>"; };
 		D52158671C948CE2004EE4BE /* Stylesheet.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Stylesheet.swift; sourceTree = "<group>"; };
@@ -121,6 +134,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D270E92F1E00652D008E7C5F /* Nimble.framework in Frameworks */,
+				D270E9301E00652D008E7C5F /* Quick.framework in Frameworks */,
 				D270E9061E0062C3008E7C5F /* Fashion.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -160,6 +175,8 @@
 		D52158721C95B0AE004EE4BE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D270E92D1E00652D008E7C5F /* Nimble.framework */,
+				D270E92E1E00652D008E7C5F /* Quick.framework */,
 				D5C629791C3A879F007F7B7C /* Quick.framework */,
 				D5C6297A1C3A879F007F7B7C /* Nimble.framework */,
 				D5C629751C3A878E007F7B7C /* Quick.framework */,
@@ -342,6 +359,7 @@
 				D270E9011E0062C3008E7C5F /* Sources */,
 				D270E9021E0062C3008E7C5F /* Frameworks */,
 				D270E9031E0062C3008E7C5F /* Resources */,
+				D270E9311E006538008E7C5F /* Copy frameworks with Carthage */,
 			);
 			buildRules = (
 			);
@@ -501,6 +519,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		D270E9311E006538008E7C5F /* Copy frameworks with Carthage */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/tvOS/Quick.framework",
+				"$(SRCROOT)/Carthage/Build/tvOS/Nimble.framework",
+			);
+			name = "Copy frameworks with Carthage";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
 		D506BC571D9DC34800A6FE0D /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -570,6 +604,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D270E92A1E006491008E7C5F /* StylistSpec.swift in Sources */,
+				D270E9241E006491008E7C5F /* TestHelpers.swift in Sources */,
+				D270E92C1E006491008E7C5F /* UIView+StyleableSpec.swift in Sources */,
+				D270E92B1E006491008E7C5F /* UIView+SharedStylesSpec.swift in Sources */,
+				D270E9281E006491008E7C5F /* StylesheetSpec.swift in Sources */,
+				D270E9251E006491008E7C5F /* FashionSpec.swift in Sources */,
+				D270E9271E006491008E7C5F /* Stylesheet+UIAppearanceSpec.swift in Sources */,
+				D270E9291E006491008E7C5F /* StyleSpec.swift in Sources */,
+				D270E9261E006491008E7C5F /* StyleableSpec.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -695,7 +738,11 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				INFOPLIST_FILE = "Fashion-tvOSTests/Info.plist";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = "FashionTests/Info-tvOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadymmarkov.Fashion-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -713,7 +760,11 @@
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
-				INFOPLIST_FILE = "Fashion-tvOSTests/Info.plist";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/tvOS",
+				);
+				INFOPLIST_FILE = "FashionTests/Info-tvOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadymmarkov.Fashion-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
