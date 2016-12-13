@@ -10,3 +10,5 @@ script:
 - xcodebuild clean build -project Fashion.xcodeproj -scheme "Fashion-Mac" -sdk macosx
 - xcodebuild clean build -project Fashion.xcodeproj -scheme "Fashion-iOS" -sdk iphonesimulator
 - xcodebuild test -project Fashion.xcodeproj -scheme "Fashion-iOS" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.0'
+- xcodebuild -project Fashion.xcodeproj -scheme "Fashion-tvOS" -destination 'platform=tvOS Simulator,name=Apple TV 1080p,OS=10.0' clean build | xcpretty
+- xcodebuild -project Fashion.xcodeproj -scheme "Fashion-tvOS" -destination 'platform=tvOS Simulator,name=Apple TV 1080p,OS=10.0' -enableCodeCoverage YES test | xcpretty
