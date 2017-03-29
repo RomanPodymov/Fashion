@@ -155,13 +155,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D270E9181E0063A0008E7C5F /* tvOS */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = tvOS;
-			sourceTree = "<group>";
-		};
 		D5A516C21C98125100B5442D /* Fashion */ = {
 			isa = PBXGroup;
 			children = (
@@ -242,7 +235,6 @@
 		D5C629691C3A809D007F7B7C /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				D270E9181E0063A0008E7C5F /* tvOS */,
 				D5C6296A1C3A809D007F7B7C /* iOS */,
 				D5C6296C1C3A809D007F7B7C /* Mac */,
 				D5C6296E1C3A809D007F7B7C /* Shared */,
