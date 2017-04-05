@@ -13,7 +13,7 @@ extension UIView {
 
   public convenience init(frame: CGRect = CGRect.zero, styles: StringConvertible) {
     self.init(frame: frame)
-    stylize(styles)
+    apply(styles: styles)
   }
 
   /**
@@ -22,7 +22,7 @@ extension UIView {
    - Parameter styles: Set of style names.
    */
 
-  public func stylize(_ styles: StringConvertible...) {
+  public func apply(styles: StringConvertible...) {
     self.styles = styles.map { $0.string } .joined(separator: " ")
   }
 

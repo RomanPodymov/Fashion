@@ -13,7 +13,7 @@ public extension NSView {
 
    - Parameter styles: Set of style names.
    */
-  public func stylize(styles: String...) {
+  public func apply(styles: String...) {
     Stylist.master.apply(styles, model: self)
   }
 
