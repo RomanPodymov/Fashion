@@ -8,7 +8,7 @@ public final class Stylist {
   typealias Stylization = (_ model: Styleable) -> Void
 
   var sharedStyles: [String: Stylization] = [:]
-  var styles: [String: Stylization] = [:]
+  var styles: [String: [Stylization]] = [:]
 
   // MARK: - Initialization
 
@@ -35,9 +35,10 @@ public final class Stylist {
    - Parameter model: `Styleable` view/model.
    */
   func apply(_ style: String, model: Styleable) -> Void {
-    guard let style = styles[style] else { return }
-
-    style(model)
+    guard let styles = self.styles[style] else { return }
+    for style in styles {
+        style(model)
+    }
   }
 
   /**
@@ -80,7 +81,10 @@ extension Stylist: StyleManaging {
   public func register<T: Styleable>(_ name: StringConvertible, stylization: @escaping (T) -> Void) {
     let style = Style(process: stylization)
 
-    styles[name.string] = style.applyTo
+    if styles[name.string] == nil {
+      styles[name.string] = []
+    }
+    styles[name.string]!.append(style.applyTo)
   }
 
   /**
