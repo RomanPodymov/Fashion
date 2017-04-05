@@ -80,7 +80,7 @@ extension Stylist: StyleManaging {
   public func register<T: Styleable>(_ name: StringConvertible, stylization: @escaping (T) -> Void) {
     let style = Style(process: stylization)
 
-    styles[name.string] = style.applyTo
+    styles[name.string] = style.apply
   }
 
   /**
@@ -102,7 +102,7 @@ extension Stylist: StyleManaging {
   public func share<T: Styleable>(_ stylization: @escaping (T) -> Void) {
     let style = Style(process: stylization)
 
-    sharedStyles[String(describing: T.self)] = style.applyTo
+    sharedStyles[String(describing: T.self)] = style.apply
   }
 
   /**

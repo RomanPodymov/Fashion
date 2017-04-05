@@ -26,7 +26,7 @@ class StyleTests: XCTestCase {
     label.textColor = UIColor.white
     label.numberOfLines = 2
 
-    style.applyTo(label)
+    style.apply(to: label)
 
     // It applies the style to the passed model
     XCTAssertEqual(label.backgroundColor, UIColor.white)
@@ -38,7 +38,7 @@ class StyleTests: XCTestCase {
     let view = UIView()
     view.backgroundColor = UIColor.red
 
-    style.applyTo(view)
+    style.apply(to: view)
 
     // It does not apply the style to the passed model
     XCTAssertEqual(view.backgroundColor, UIColor.red)
