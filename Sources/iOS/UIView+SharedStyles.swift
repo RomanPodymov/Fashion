@@ -8,7 +8,7 @@ extension UIView {
 
   // MARK: - Method Swizzling
 
-  override open class func initialize() {
+  class func setupSwizzling() {
     struct Static {
       static let token = NSUUID().uuidString
     }
