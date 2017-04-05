@@ -12,6 +12,46 @@ public struct Style<T: Styleable> {
   // MARK: - Stylization
 
   /**
+   Composes multiple styles.
+
+   - Parameter styles: Styles to compose.
+   - Returns: A new composed style.
+   */
+  public static func compose(_ styles: Style<T>...) -> Style<T> {
+    return Style { view in
+      for style in styles {
+        style.apply(to: view)
+      }
+    }
+  }
+
+  /**
+   Composes multiple styles.
+
+   - Parameter styles: Styles to compose.
+   - Returns: A new composed style.
+   */
+  public static func compose(_ styles: [Style<T>]) -> Style<T> {
+    return Style { view in
+      for style in styles {
+        style.apply(to: view)
+      }
+    }
+  }
+
+  /**
+   Composes the current style with another styles.
+
+   - Parameter styles: Styles to compose with.
+   - Returns: A new composed style.
+   */
+  public func composing(with styles: Style<T>...) -> Style<T> {
+    var stylesToCompose = [self]
+    stylesToCompose.append(contentsOf: styles)
+    return Style<T>.compose(stylesToCompose)
+  }
+
+  /**
   Applies style to the passed view.
 
   - Parameter view: `Styleable` view.
@@ -40,6 +80,7 @@ public struct Style<T: Styleable> {
     guard let view = view as? T else {
       return
     }
+
     process(view)
   }
 }
