@@ -117,4 +117,12 @@ extension Stylist: StyleManaging {
   public func unshare<T: Styleable>(_ type: T.Type) {
     sharedStyles.removeValue(forKey: String(describing: type))
   }
+
+  /**
+   Clears all the styles
+  */
+  public func clear() {
+    sharedStyles = [:]
+    styles = [:]
+  }
 }
