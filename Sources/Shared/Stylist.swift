@@ -22,7 +22,7 @@ public final class Stylist {
   - Parameter styles: Names of the style you want to apply in the specified order.
   - Parameter model: `Styleable` view/model.
   */
-  func apply(_ styles: [String], model: Styleable) -> Void {
+  func apply(_ styles: [String], model: Styleable) {
     for style in styles {
       apply(style, model: model)
     }
@@ -34,7 +34,7 @@ public final class Stylist {
    - Parameter style: Name of the style you want to apply.
    - Parameter model: `Styleable` view/model.
    */
-  func apply(_ style: String, model: Styleable) -> Void {
+  func apply(_ style: String, model: Styleable) {
     guard let styles = self.styles[style] else { return }
     for style in styles {
         style(model)
