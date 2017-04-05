@@ -79,7 +79,6 @@ extension Stylist: StyleManaging {
    */
   public func register<T: Styleable>(_ name: StringConvertible, stylization: @escaping (T) -> Void) {
     let style = Style(process: stylization)
-
     styles[name.string] = style.apply
   }
 
