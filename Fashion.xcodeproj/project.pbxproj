@@ -177,7 +177,6 @@
 		D5A516CA1C98127E00B5442D /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				D5A516CC1C98127E00B5442D /* Helpers */,
 				D5A516CB1C98127E00B5442D /* FashionTests.swift */,
 				D5A516CE1C98127E00B5442D /* StyleableTests.swift */,
 				D5A516CF1C98127E00B5442D /* Stylesheet+UIAppearanceTests.swift */,
@@ -186,6 +185,7 @@
 				D5A516D21C98127E00B5442D /* StylistTests.swift */,
 				D5A516D31C98127E00B5442D /* UIView+SharedStylesTests.swift */,
 				D5A516D41C98127E00B5442D /* UIView+StyleableTests.swift */,
+				D5A516CC1C98127E00B5442D /* Helpers */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -245,9 +245,9 @@
 		D5C6296A1C3A809D007F7B7C /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				D5C629821C3A892A007F7B7C /* UIView+Styleable.swift */,
-				D54B580E1C95DCF90029F7BC /* UIView+SharedStyles.swift */,
 				D521586D1C949EF5004EE4BE /* Stylesheet+UIAppearance.swift */,
+				D54B580E1C95DCF90029F7BC /* UIView+SharedStyles.swift */,
+				D5C629821C3A892A007F7B7C /* UIView+Styleable.swift */,
 			);
 			path = iOS;
 			sourceTree = "<group>";
@@ -263,13 +263,13 @@
 		D5C6296E1C3A809D007F7B7C /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				D521588C1C95CBFC004EE4BE /* Styleable.swift */,
+				D52158761C95B369004EE4BE /* Fashion.swift */,
+				D5F2E6A11CC98D5200D180B9 /* StringConvertible.swift */,
 				D5C629861C3A89A8007F7B7C /* Style.swift */,
+				D521588C1C95CBFC004EE4BE /* Styleable.swift */,
 				D52158731C95B117004EE4BE /* StyleManaging.swift */,
 				D52158671C948CE2004EE4BE /* Stylesheet.swift */,
 				D521586F1C94A444004EE4BE /* Stylist.swift */,
-				D52158761C95B369004EE4BE /* Fashion.swift */,
-				D5F2E6A11CC98D5200D180B9 /* StringConvertible.swift */,
 				D5CD50E11D9DB8DA0031C666 /* Swizzler.swift */,
 			);
 			path = Shared;
