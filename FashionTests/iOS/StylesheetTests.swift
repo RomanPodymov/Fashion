@@ -25,6 +25,25 @@ class StylesheetTests: XCTestCase {
     XCTAssertNotNil(Stylist.master.styles[style])
   }
 
+  func testRegisterMultiple() {
+    stylesheet.register(style) { (button: UIButton) in
+      button.backgroundColor = UIColor.red
+    }
+
+    stylesheet.register(style) { (button: UIButton) in
+      button.tintColor = UIColor.red
+    }
+
+    let button = UIButton()
+    button.backgroundColor = .blue
+    button.tintColor = .blue
+    button.stylize(style)
+
+    // It applies multiple register closures
+    XCTAssertTrue(button.backgroundColor == .red)
+    XCTAssertTrue(button.tintColor == .red)
+  }
+
   func testUnregister() {
     stylesheet.register(style, stylization: { (button: UIButton) in
       button.backgroundColor = UIColor.red
@@ -58,4 +77,28 @@ class StylesheetTests: XCTestCase {
     // It unregisters shared stylization closure for the specified type
     XCTAssertNil(Stylist.master.sharedStyles["UIButton"])
   }
+
+  func testClear() {
+    stylesheet.share { (button: UILabel) in
+      button.backgroundColor = UIColor.red
+    }
+
+    stylesheet.register(style) { (button: UIButton) in
+      button.backgroundColor = UIColor.red
+    }
+
+    Stylist.master.clear()
+    let button = UIButton()
+    button.backgroundColor = .blue
+    button.stylize(style)
+    let label = UILabel()
+    label.backgroundColor = .blue
+    label.stylize(style)
+
+    // It clears registered and shared styles
+    XCTAssertFalse(button.backgroundColor == .red)
+    XCTAssertFalse(label.backgroundColor == .red)
+    XCTAssertTrue(Stylist.master.styles[style] == nil || Stylist.master.styles[style]?.count == 0)
+  }
+
 }
