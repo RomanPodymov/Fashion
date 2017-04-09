@@ -178,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				D5A516CB1C98127E00B5442D /* FashionTests.swift */,
+				D5A516CC1C98127E00B5442D /* Helpers */,
 				D5A516CE1C98127E00B5442D /* StyleableTests.swift */,
 				D5A516CF1C98127E00B5442D /* Stylesheet+UIAppearanceTests.swift */,
 				D5A516D01C98127E00B5442D /* StylesheetTests.swift */,
@@ -185,7 +186,6 @@
 				D5A516D21C98127E00B5442D /* StylistTests.swift */,
 				D5A516D31C98127E00B5442D /* UIView+SharedStylesTests.swift */,
 				D5A516D41C98127E00B5442D /* UIView+StyleableTests.swift */,
-				D5A516CC1C98127E00B5442D /* Helpers */,
 			);
 			path = iOS;
 			sourceTree = "<group>";

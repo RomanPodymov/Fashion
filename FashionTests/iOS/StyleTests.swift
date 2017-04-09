@@ -1,4 +1,5 @@
 import XCTest
+import UIKit
 @testable import Fashion
 
 class StyleTests: XCTestCase {
@@ -7,7 +8,7 @@ class StyleTests: XCTestCase {
 
   override func setUp() {
     super.setUp()
-    style = Style<UILabel>{ label in
+    style = Style<UILabel> { label in
       label.backgroundColor = UIColor.white
       label.textColor = UIColor.red
       label.numberOfLines = 10
@@ -26,11 +27,11 @@ class StyleTests: XCTestCase {
     label.textColor = UIColor.white
     label.numberOfLines = 2
     
-    let style2 = Style<UILabel>{ label in
+    let style2 = Style<UILabel> { label in
       label.backgroundColor = UIColor.black
     }
 
-    let composedStyle = Style<UILabel>.compose(style, style2)
+    let composedStyle = Style.compose(style, style2)
     composedStyle.apply(to: label)
 
     // It composes multiple styles
