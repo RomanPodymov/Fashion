@@ -39,25 +39,6 @@ class StyleTests: XCTestCase {
     XCTAssertEqual(label.numberOfLines, 10)
   }
 
-  func testComposing() {
-    let label = UILabel()
-    label.backgroundColor = UIColor.red
-    label.textColor = UIColor.white
-    label.numberOfLines = 2
-
-    let style2 = Style<UILabel>{ label in
-      label.backgroundColor = UIColor.black
-    }
-
-    let composedStyle = style.composing(with: style2)
-    composedStyle.apply(to: label)
-
-    // It composes multiple styles
-    XCTAssertEqual(label.backgroundColor, UIColor.black)
-    XCTAssertEqual(label.textColor, UIColor.red)
-    XCTAssertEqual(label.numberOfLines, 10)
-  }
-
   func testApplyTo() {
     let label = UILabel()
     label.backgroundColor = UIColor.red
