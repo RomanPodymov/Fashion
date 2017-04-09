@@ -4,11 +4,12 @@ import UIKit
 
 class StylesheetTests: XCTestCase {
 
-  let stylesheet = TestEmptyStylesheet()
+  var stylesheet: Stylesheet!
   let style = "red-button"
 
   override func setUp() {
     super.setUp()
+    stylesheet = TestEmptyStylesheet()
   }
 
   override func tearDown() {
