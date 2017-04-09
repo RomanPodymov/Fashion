@@ -22,6 +22,7 @@ type.
   * [Conventional way](#conventional-way)
   * [Stylesheet](#stylesheet)
   * [Stylist](#stylist)
+  * [Style](#style)
   * [UIView extensions](#uiview-extensions)
 * [Installation](#installation)
 * [Author](#author)
@@ -70,7 +71,7 @@ Fashion.register([MainStylesheet()])
 
 ```swift
 let button = UIButton() // let button = UIButton(styles: "custom-button")
-button.stylize(Style.customButton) // backgroundColor => .red
+button.apply(styles: Style.customButton) // backgroundColor => .red
 
 let label = UILabel()
 addSubview(label) // textColor => .blue
@@ -170,6 +171,41 @@ stylist.share { (tableView: UITableView) in
 stylist.unshare(UITableView.self)
 ```
 
+### Style
+
+Use generic `Style` struct if you want to have more control on when, where and
+how styles are applied in your app. Then you don't need to deal with style
+keys, register or share closures.
+
+```swift
+let label = UILabel()
+let style = Style<UILabel> { label in
+  label.backgroundColor = UIColor.black
+  label.textColor = UIColor.white
+  label.numberOfLines = 10
+}
+
+// The same as style.apply(to: label)
+label.apply(style: style)
+```
+
+It's also possible to create a style by composing multiple ones:
+
+```swift
+let label = UILabel()
+let style1 = Style<UILabel> { label in
+  label.backgroundColor = UIColor.black
+}
+let style2 = Style<UILabel>{ label in
+  label.textColor = UIColor.white
+}
+
+let composedStyle = Style.compose(style1, style2)
+
+// The same as composedStyle.apply(to: label)
+label.apply(style: composedStyle)
+```
+
 ### UIView extensions
 
 It's super easy to apply previously registered styles with `UIView` extensions.
@@ -205,16 +241,22 @@ let button = UIButton(styles: Style.customButton)
 let label = UILabel(styles: [Style.contentView, Style.coolLabel])
 ```
 
-**With `stylize` function**
+**With `apply` functions**
 
 ```swift
 let label = UILabel()
 
 // StringConvertible
-label.stylize(Style.contentView, Style.coolLabel)
+label.apply(styles: Style.contentView, Style.coolLabel)
 
 // String
-label.stylize("content-view", "cool-label")
+label.apply(styles: "content-view", "cool-label")
+
+// Style structs
+let style = Style<UILabel> { label in
+  label.backgroundColor = UIColor.black
+}
+label.apply(style: style)
 ```
 
 **With `@IBInspectable` property `styles`**
