@@ -1,5 +1,5 @@
 import UIKit
-import Fashion
+@testable import Fashion
 
 struct TestEmptyStylesheet: Stylesheet {
   func define() {}

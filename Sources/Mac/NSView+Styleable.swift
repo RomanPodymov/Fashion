@@ -13,8 +13,8 @@ public extension NSView {
 
    - Parameter styles: Set of style names.
    */
-  public func stylize(styles: String...) {
-    Stylist.master.apply(styles, model: self)
+  public func apply(styles: StringConvertible...) {
+    self.styles = styles.map { $0.string } .joined(separator: " ")
   }
 
   /**
@@ -22,7 +22,7 @@ public extension NSView {
 
    - Parameter styles: Single style or multiple styles separated by whitespace.
    */
-  @IBInspectable public var style: String? {
+  @IBInspectable public var styles: String? {
     get {
       return objc_getAssociatedObject(self, &AssociatedKeys.Style) as? String
     }

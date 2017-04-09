@@ -1,13 +1,15 @@
 import XCTest
+import UIKit
 @testable import Fashion
 
 class StylesheetTests: XCTestCase {
 
-  let stylesheet = TestEmptyStylesheet()
+  var stylesheet: Stylesheet!
   let style = "red-button"
 
   override func setUp() {
     super.setUp()
+    stylesheet = TestEmptyStylesheet()
   }
 
   override func tearDown() {
@@ -37,7 +39,7 @@ class StylesheetTests: XCTestCase {
     let button = UIButton()
     button.backgroundColor = .blue
     button.tintColor = .blue
-    button.stylize(style)
+    button.apply(styles: style)
 
     // It applies multiple register closures
     XCTAssertTrue(button.backgroundColor == .red)
@@ -90,15 +92,14 @@ class StylesheetTests: XCTestCase {
     Stylist.master.clear()
     let button = UIButton()
     button.backgroundColor = .blue
-    button.stylize(style)
+    button.apply(styles: style)
     let label = UILabel()
     label.backgroundColor = .blue
-    label.stylize(style)
+    label.apply(styles: style)
 
     // It clears registered and shared styles
     XCTAssertFalse(button.backgroundColor == .red)
     XCTAssertFalse(label.backgroundColor == .red)
     XCTAssertTrue(Stylist.master.styles[style] == nil || Stylist.master.styles[style]?.count == 0)
   }
-
 }

@@ -84,7 +84,8 @@ extension Stylist: StyleManaging {
     if styles[name.string] == nil {
       styles[name.string] = []
     }
-    styles[name.string]!.append(style.applyTo)
+
+    styles[name.string]!.append(style.apply)
   }
 
   /**
@@ -106,7 +107,7 @@ extension Stylist: StyleManaging {
   public func share<T: Styleable>(_ stylization: @escaping (T) -> Void) {
     let style = Style(process: stylization)
 
-    sharedStyles[String(describing: T.self)] = style.applyTo
+    sharedStyles[String(describing: T.self)] = style.apply
   }
 
   /**

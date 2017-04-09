@@ -1,26 +1,60 @@
 /// Stylization closure wrapper.
-final class Style<T: Styleable> {
+public struct Style<T: Styleable> {
 
-  let process: (_ model: T) -> Void
+  let process: (T) -> Void
 
   // MARK: - Initialization
 
-  init(process: @escaping (_ model: T) -> Void) {
+  public init(process: @escaping (_ view: T) -> Void) {
     self.process = process
   }
 
   // MARK: - Stylization
 
   /**
-  Applies style to the passed model.
+   Composes multiple styles.
 
-  - Parameter model: `Styleable` view/model.
+   - Parameter styles: Styles to compose.
+   - Returns: A new composed style.
+   */
+  public static func compose(_ styles: Style<T>...) -> Style<T> {
+    return Style { view in
+      for style in styles {
+        style.apply(to: view)
+      }
+    }
+  }
+
+  /**
+  Applies style to the passed view.
+
+  - Parameter view: `Styleable` view.
   */
-  func applyTo(_ model: Styleable) {
-    guard let model = model as? T else {
+  public func apply(to view: T) -> Void {
+    process(view)
+  }
+
+  /**
+   Applies style to the passed view.
+
+   - Parameter view: `Styleable` view.
+   */
+  public func apply(to views: T...) {
+    for view in views {
+      apply(to: view)
+    }
+  }
+
+  /**
+   Applies style to the passed view.
+
+   - Parameter view: `Styleable` view.
+   */
+  func apply(to view: Styleable) {
+    guard let view = view as? T else {
       return
     }
 
-    process(model)
+    process(view)
   }
 }

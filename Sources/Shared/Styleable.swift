@@ -21,4 +21,17 @@ public extension Styleable {
     stylization(self)
     return self
   }
+
+  @discardableResult public func apply(style: Style<Self>) -> Self {
+    style.apply(to: self)
+    return self
+  }
+
+  @discardableResult public func apply(styles: Style<Self>...) -> Self {
+    for style in styles {
+      apply(style: style)
+    }
+
+    return self
+  }
 }

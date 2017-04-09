@@ -3,7 +3,7 @@ import Foundation
 /**
  A helper struct for method swizzling.
  */
-public struct Swizzler {
+struct Swizzler {
 
   public enum Kind {
     case Instance
@@ -18,7 +18,7 @@ public struct Swizzler {
    - parameter prefix: Unique prefix
    - parameter prefix: Swizzling type, instance or class
   */
-  public static func swizzle(method: String,
+  static func swizzle(method: String,
                              cls: AnyClass!,
                              prefix: String = "swizzled",
                              kind: Kind = .Instance) {
@@ -50,7 +50,7 @@ public struct Swizzler {
 /**
  DispatchQueue extension which implements dispatch_once functionality
  */
-public extension DispatchQueue {
+extension DispatchQueue {
 
   private static var tokens = [String]()
 

@@ -1,4 +1,5 @@
 import XCTest
+import UIKit
 @testable import Fashion
 
 class UIViewStyleableTests: XCTestCase {
@@ -39,18 +40,18 @@ class UIViewStyleableTests: XCTestCase {
     XCTAssertEqual(label.numberOfLines, 3)
   }
 
-  func testStylizeWithRegisteredStyles() {
+  func testApplyStylesWithRegisteredStyles() {
     // It applies previously registered styles
-    label.stylize("label-1", "label-2")
+    label.apply(styles: "label-1", "label-2")
 
     XCTAssertEqual(label.backgroundColor, UIColor.yellow)
     XCTAssertEqual(label.textColor, UIColor.red)
     XCTAssertEqual(label.numberOfLines, 3)
   }
 
-  func testStylizeWithNotRegisteredStyles() {
+  func testApplyStylesWithNotRegisteredStyles() {
     // It does not apply not registered styles
-    label.stylize("label-3", "label-4")
+    label.apply(styles: "label-3", "label-4")
 
     XCTAssertEqual(label.backgroundColor, UIColor.red)
     XCTAssertEqual(label.textColor, UIColor.white)
