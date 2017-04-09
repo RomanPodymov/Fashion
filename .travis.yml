@@ -4,9 +4,9 @@ language: objective-c
 script:
 - xcodebuild clean build -project Fashion.xcodeproj -scheme "Fashion-Mac" -sdk macosx | xcpretty
 - xcodebuild clean build -project Fashion.xcodeproj -scheme "Fashion-iOS" -sdk iphonesimulator | xcpretty
-- xcodebuild clean build -project Fashion.xcodeproj -scheme "Fashion-tvOS" -destination 'platform=tvOS Simulator,name=Apple TV 1080p,OS=10.3' | xcpretty
-- xcodebuild test -project Fashion.xcodeproj -scheme "Fashion-iOS" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 6,OS=10.3' | xcpretty
-- xcodebuild test -project Fashion.xcodeproj -scheme "Fashion-tvOS" -destination 'platform=tvOS Simulator,name=Apple TV 1080p,OS=10.3' | xcpretty && exit ${PIPESTATUS[0]}
+- xcodebuild clean build -project Fashion.xcodeproj -scheme "Fashion-tvOS" -destination 'platform=tvOS Simulator,name=Apple TV 1080p,OS=10.0' | xcpretty
+- xcodebuild test -project Fashion.xcodeproj -scheme "Fashion-iOS" -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone SE,OS=10.0' | xcpretty
+- xcodebuild test -project Fashion.xcodeproj -scheme "Fashion-tvOS" -destination 'platform=tvOS Simulator,name=Apple TV 1080p,OS=10.0' | xcpretty && exit ${PIPESTATUS[0]}
 
 notifications:
   email: false
