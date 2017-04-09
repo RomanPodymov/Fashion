@@ -23,11 +23,12 @@
 		D270E9251E006491008E7C5F /* FashionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516CB1C98127E00B5442D /* FashionTests.swift */; };
 		D270E9261E006491008E7C5F /* StyleableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516CE1C98127E00B5442D /* StyleableTests.swift */; };
 		D270E9271E006491008E7C5F /* Stylesheet+UIAppearanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516CF1C98127E00B5442D /* Stylesheet+UIAppearanceTests.swift */; };
-		D270E9281E006491008E7C5F /* StylesheetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516D01C98127E00B5442D /* StylesheetTests.swift */; };
 		D270E9291E006491008E7C5F /* StyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516D11C98127E00B5442D /* StyleTests.swift */; };
 		D270E92A1E006491008E7C5F /* StylistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516D21C98127E00B5442D /* StylistTests.swift */; };
 		D270E92B1E006491008E7C5F /* UIView+SharedStylesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516D31C98127E00B5442D /* UIView+SharedStylesTests.swift */; };
 		D270E92C1E006491008E7C5F /* UIView+StyleableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516D41C98127E00B5442D /* UIView+StyleableTests.swift */; };
+		D51C8E9D1E9A88B9009CBFD2 /* StylesheetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516D01C98127E00B5442D /* StylesheetTests.swift */; };
+		D51C8E9E1E9A88BA009CBFD2 /* StylesheetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516D01C98127E00B5442D /* StylesheetTests.swift */; };
 		D52158681C948CE2004EE4BE /* Stylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158671C948CE2004EE4BE /* Stylesheet.swift */; };
 		D52158691C948CE2004EE4BE /* Stylesheet.swift in Sources */ = {isa = PBXBuildFile; fileRef = D52158671C948CE2004EE4BE /* Stylesheet.swift */; };
 		D521586E1C949EF5004EE4BE /* Stylesheet+UIAppearance.swift in Sources */ = {isa = PBXBuildFile; fileRef = D521586D1C949EF5004EE4BE /* Stylesheet+UIAppearance.swift */; };
@@ -44,7 +45,6 @@
 		D5A516D81C98127E00B5442D /* TestHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516CD1C98127E00B5442D /* TestHelpers.swift */; };
 		D5A516D91C98127E00B5442D /* StyleableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516CE1C98127E00B5442D /* StyleableTests.swift */; };
 		D5A516DA1C98127E00B5442D /* Stylesheet+UIAppearanceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516CF1C98127E00B5442D /* Stylesheet+UIAppearanceTests.swift */; };
-		D5A516DB1C98127E00B5442D /* StylesheetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516D01C98127E00B5442D /* StylesheetTests.swift */; };
 		D5A516DC1C98127E00B5442D /* StyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516D11C98127E00B5442D /* StyleTests.swift */; };
 		D5A516DD1C98127E00B5442D /* StylistTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516D21C98127E00B5442D /* StylistTests.swift */; };
 		D5A516DE1C98127E00B5442D /* UIView+SharedStylesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D5A516D31C98127E00B5442D /* UIView+SharedStylesTests.swift */; };
@@ -539,10 +539,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D270E92A1E006491008E7C5F /* StylistTests.swift in Sources */,
+				D51C8E9E1E9A88BA009CBFD2 /* StylesheetTests.swift in Sources */,
 				D270E9241E006491008E7C5F /* TestHelpers.swift in Sources */,
 				D270E92C1E006491008E7C5F /* UIView+StyleableTests.swift in Sources */,
 				D270E92B1E006491008E7C5F /* UIView+SharedStylesTests.swift in Sources */,
-				D270E9281E006491008E7C5F /* StylesheetTests.swift in Sources */,
 				D270E9251E006491008E7C5F /* FashionTests.swift in Sources */,
 				D270E9271E006491008E7C5F /* Stylesheet+UIAppearanceTests.swift in Sources */,
 				D270E9291E006491008E7C5F /* StyleTests.swift in Sources */,
@@ -573,10 +573,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				D5A516DD1C98127E00B5442D /* StylistTests.swift in Sources */,
+				D51C8E9D1E9A88B9009CBFD2 /* StylesheetTests.swift in Sources */,
 				D5A516D71C98127E00B5442D /* FashionTests.swift in Sources */,
 				D5A516DF1C98127E00B5442D /* UIView+StyleableTests.swift in Sources */,
 				D5A516DE1C98127E00B5442D /* UIView+SharedStylesTests.swift in Sources */,
-				D5A516DB1C98127E00B5442D /* StylesheetTests.swift in Sources */,
 				D5A516D81C98127E00B5442D /* TestHelpers.swift in Sources */,
 				D5A516DA1C98127E00B5442D /* Stylesheet+UIAppearanceTests.swift in Sources */,
 				D5A516DC1C98127E00B5442D /* StyleTests.swift in Sources */,
