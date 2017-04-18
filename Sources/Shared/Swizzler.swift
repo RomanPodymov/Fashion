@@ -6,8 +6,8 @@ import Foundation
 struct Swizzler {
 
   public enum Kind {
-    case Instance
-    case Class
+    case instance
+    case `class`
   }
 
   /**
@@ -21,15 +21,15 @@ struct Swizzler {
   static func swizzle(method: String,
                              cls: AnyClass!,
                              prefix: String = "swizzled",
-                             kind: Kind = .Instance) {
+                             kind: Kind = .instance) {
     let originalSelector = Selector(method)
     let swizzledSelector = Selector("\(prefix)_\(method)")
 
-    let originalMethod = kind == .Instance
+    let originalMethod = kind == .instance
       ? class_getInstanceMethod(cls, originalSelector)
       : class_getClassMethod(cls, originalSelector)
 
-    let swizzledMethod = kind == .Instance
+    let swizzledMethod = kind == .instance
       ? class_getInstanceMethod(cls, swizzledSelector)
       : class_getClassMethod(cls, swizzledSelector)
 
