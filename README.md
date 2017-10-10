@@ -44,8 +44,7 @@ enum Style: String, StringConvertible {
   }
 }
 
-struct MainStylesheet: Stylesheet {
-
+final class MainStylesheet: Stylesheet {
   func define() {
     share { (label: UILabel) in
       label.textColor = .blue
