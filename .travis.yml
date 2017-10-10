@@ -1,5 +1,6 @@
-osx_image: xcode8
+osx_image: xcode9
 language: objective-c
+xcode_sdk: iphonesimulator10.0
 
 script:
 - xcodebuild clean build -project Fashion.xcodeproj -scheme "Fashion-Mac" -sdk macosx | xcpretty
