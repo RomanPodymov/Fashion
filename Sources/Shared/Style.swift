@@ -1,6 +1,5 @@
 /// Stylization closure wrapper.
 public struct Style<T: Styleable> {
-
   let process: (T) -> Void
 
   // MARK: - Initialization
@@ -30,7 +29,7 @@ public struct Style<T: Styleable> {
 
   - Parameter view: `Styleable` view.
   */
-  public func apply(to view: T) -> Void {
+  public func apply(to view: T) {
     process(view)
   }
 

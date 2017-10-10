@@ -1,6 +1,5 @@
 /// Convenience protocol for all types where you register your styles.
 public protocol Stylesheet: StyleManaging {
-
   /**
    Convenience function to register your styles.
    */
@@ -10,7 +9,6 @@ public protocol Stylesheet: StyleManaging {
 // MARK: - StyleManaging
 
 public extension Stylesheet {
-
   /**
    Registers stylization closure with the specified name.
    Type used in the closure should conform to `Styleable` protocol

@@ -2,8 +2,7 @@ import XCTest
 import UIKit
 @testable import Fashion
 
-class StylesheetTests: XCTestCase {
-
+final class StylesheetTests: XCTestCase {
   var stylesheet: Stylesheet!
   let style = "red-button"
 

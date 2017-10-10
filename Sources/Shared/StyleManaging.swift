@@ -1,6 +1,5 @@
 /// Protocol that defined basic functions for style management.
 public protocol StyleManaging {
-
   /**
    Registers stylization closure with the specified name.
    Type used in the closure should conform to `Styleable` protocol

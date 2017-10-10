@@ -2,8 +2,7 @@ import XCTest
 import UIKit
 @testable import Fashion
 
-class StyleTests: XCTestCase {
-
+final class StyleTests: XCTestCase {
   var style: Style<UILabel>!
 
   override func setUp() {

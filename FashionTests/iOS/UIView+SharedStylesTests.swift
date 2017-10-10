@@ -2,8 +2,7 @@ import XCTest
 import UIKit
 @testable import Fashion
 
-class UIViewSharedStylesTests: XCTestCase {
-
+final class UIViewSharedStylesTests: XCTestCase {
   override func setUp() {
     super.setUp()
 

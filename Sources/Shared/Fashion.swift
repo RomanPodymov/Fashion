@@ -9,7 +9,6 @@
  - Parameter stylesheets: Array of stylesheets to be registered.
  */
 public func register(stylesheets: [Stylesheet]) {
-
   #if os(iOS) || os(tvOS)
     UIView.setupSwizzling()
   #endif
