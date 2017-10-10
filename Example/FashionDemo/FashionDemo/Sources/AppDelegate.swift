@@ -3,23 +3,16 @@ import Fashion
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
   var window: UIWindow?
 
-  lazy var navigationController: UINavigationController = { [unowned self] in
-    let controller = UINavigationController(rootViewController: self.viewController)
-    return controller
-    }()
+  lazy var navigationController: UINavigationController = .init(rootViewController: self.viewController)
+  lazy var viewController: ViewController = .init()
 
-  lazy var viewController: ViewController = {
-    let controller = ViewController()
-    return controller
-    }()
-
-  func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-    Fashion.register([MainStylesheet()])
+  func application(_ application: UIApplication,
+                   didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+    Fashion.register(stylesheets: [MainStylesheet()])
     
-    window = UIWindow(frame: UIScreen.mainScreen().bounds)
+    window = UIWindow(frame: UIScreen.main.bounds)
     window?.rootViewController = navigationController
     window?.makeKeyAndVisible()
 

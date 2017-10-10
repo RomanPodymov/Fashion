@@ -3,7 +3,6 @@ public protocol StringConvertible {
 }
 
 extension String: StringConvertible {
-
   public var string: String {
     return self
   }

@@ -2,9 +2,7 @@ import Foundation
 
 /// Style keeper, resolver and manager.
 public final class Stylist {
-
   public static let master = Stylist()
-
   typealias Stylization = (_ model: Styleable) -> Void
 
   var sharedStyles: [String: Stylization] = [:]
@@ -48,7 +46,7 @@ public final class Stylist {
    */
   @discardableResult func applyShared(_ model: Styleable) -> Bool {
     var resolved = false
-    var type: AnyClass = type(of: model)
+    var type: AnyClass = Swift.type(of: model)
     var typeHierarchy = [type]
 
     while let superclass = class_getSuperclass(type) {
@@ -70,7 +68,6 @@ public final class Stylist {
 // MARK: - StyleManaging
 
 extension Stylist: StyleManaging {
-
   /**
    Registers stylization closure with the specified name.
    Type used in the closure should conform to `Styleable` protocol

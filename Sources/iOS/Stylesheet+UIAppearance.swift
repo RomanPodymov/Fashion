@@ -1,7 +1,6 @@
 import UIKit
 
 public extension Stylesheet {
-
   /**
    Wrapper function to set UIAppearance.
    Use `share` method instead.

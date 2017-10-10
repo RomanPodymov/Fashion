@@ -1,8 +1,7 @@
 import UIKit
 
 extension UIView {
-
-  fileprivate struct AssociatedKeys {
+  private struct AssociatedKeys {
     static var stylesApplied = "fashion_StylesAppliedAssociatedKey"
   }
 
@@ -16,12 +15,19 @@ extension UIView {
     if self !== UIView.self { return }
 
     DispatchQueue.once(token: Static.token) {
-      Swizzler.swizzle(method: "willMoveToSuperview:", cls: self, prefix: "fashion")
+      let originalSelector = #selector(willMove(toSuperview:))
+      let swizzledSelector = #selector(fashion_willMove(toSuperview:))
+
+      Swizzler.swizzle(
+        cls: UIView.self,
+        originalSelector: originalSelector,
+        swizzledSelector: swizzledSelector
+      )
     }
   }
 
-  func fashion_willMoveToSuperview(_ newSuperview: UIView?) {
-    fashion_willMoveToSuperview(newSuperview)
+  @objc func fashion_willMove(toSuperview newSuperview: UIView?) {
+    fashion_willMove(toSuperview: newSuperview)
 
     guard runtimeStyles else {
       return
@@ -38,13 +44,17 @@ extension UIView {
     }
   }
 
-  fileprivate var stylesApplied: Bool? {
+  private var stylesApplied: Bool? {
     get {
       return objc_getAssociatedObject(self, &AssociatedKeys.stylesApplied) as? Bool
     }
     set (newValue) {
-      objc_setAssociatedObject(self, &AssociatedKeys.stylesApplied,
-        newValue, objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC)
+      objc_setAssociatedObject(
+        self,
+        &AssociatedKeys.stylesApplied,
+        newValue,
+        objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC
+      )
     }
   }
 }

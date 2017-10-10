@@ -2,8 +2,7 @@ import XCTest
 import UIKit
 @testable import Fashion
 
-class StylesheetUIAppearanceTests: XCTestCase {
-
+final class StylesheetUIAppearanceTests: XCTestCase {
   override func tearDown() {
     Stylist.master.styles.removeAll()
     Stylist.master.sharedStyles.removeAll()

@@ -3,7 +3,7 @@
 [![CI Status](http://img.shields.io/travis/vadymmarkov/Fashion.svg?style=flat)](https://travis-ci.org/vadymmarkov/Fashion)
 [![Version](https://img.shields.io/cocoapods/v/Fashion.svg?style=flat)](http://cocoadocs.org/docsets/Fashion)
 [![Carthage Compatible](https://img.shields.io/badge/Carthage-compatible-4BC51D.svg?style=flat)](https://github.com/Carthage/Carthage)
-![Swift](https://img.shields.io/badge/%20in-swift%203.0-orange.svg)
+![Swift](https://img.shields.io/badge/%20in-swift%204.0-orange.svg)
 [![License](https://img.shields.io/cocoapods/l/Fashion.svg?style=flat)](http://cocoadocs.org/docsets/Fashion)
 [![Platform](https://img.shields.io/cocoapods/p/Fashion.svg?style=flat)](http://cocoadocs.org/docsets/Fashion)
 
@@ -44,8 +44,7 @@ enum Style: String, StringConvertible {
   }
 }
 
-struct MainStylesheet: Stylesheet {
-
+final class MainStylesheet: Stylesheet {
   func define() {
     share { (label: UILabel) in
       label.textColor = .blue

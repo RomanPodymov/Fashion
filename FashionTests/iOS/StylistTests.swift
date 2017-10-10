@@ -2,8 +2,7 @@ import XCTest
 import UIKit
 @testable import Fashion
 
-class StylistTests: XCTestCase {
-
+final class StylistTests: XCTestCase {
   var stylist: Stylist!
 
   override func setUp() {

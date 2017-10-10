@@ -1,12 +1,11 @@
 import UIKit
 @testable import Fashion
 
-struct TestEmptyStylesheet: Stylesheet {
+final class TestEmptyStylesheet: Stylesheet {
   func define() {}
 }
 
-struct TestStylesheet: Stylesheet {
-
+final class TestStylesheet: Stylesheet {
   let style = "red-button"
 
   init() {}
@@ -18,7 +17,7 @@ struct TestStylesheet: Stylesheet {
   }
 }
 
-class Button: UIButton {
+final class Button: UIButton {
   override var backgroundColor: UIColor? {
     didSet {
     }
