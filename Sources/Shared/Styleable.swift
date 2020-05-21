@@ -14,17 +14,17 @@ public extension Styleable {
 
    - Parameter stylization: Closure where you can apply styles.
    */
-  @discardableResult public func stylize(_ stylization: (Self) -> Void) -> Self {
+  @discardableResult func stylize(_ stylization: (Self) -> Void) -> Self {
     stylization(self)
     return self
   }
 
-  @discardableResult public func apply(style: Style<Self>) -> Self {
+  @discardableResult func apply(style: Style<Self>) -> Self {
     style.apply(to: self)
     return self
   }
 
-  @discardableResult public func apply(styles: Style<Self>...) -> Self {
+  @discardableResult func apply(styles: Style<Self>...) -> Self {
     for style in styles {
       apply(style: style)
     }

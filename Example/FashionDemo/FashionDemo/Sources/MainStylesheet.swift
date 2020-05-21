@@ -7,8 +7,8 @@ final class MainStylesheet: Stylesheet {
       navigationBar.barTintColor = .black
       
       navigationBar.titleTextAttributes = [
-        NSAttributedStringKey.font : UIFont.boldSystemFont(ofSize: 18),
-        NSAttributedStringKey.foregroundColor : UIColor.white
+        NSAttributedString.Key.font : UIFont.boldSystemFont(ofSize: 18),
+        NSAttributedString.Key.foregroundColor : UIColor.white
       ]
     }
     
@@ -19,11 +19,11 @@ final class MainStylesheet: Stylesheet {
       label.textAlignment = .center
     }
     
-    register("content-view") { (view: UIView) in
+    register(Style.contentView) { (view: UIView) in
       view.backgroundColor = .white
     }
     
-    register("card-view") { (view: UIView) in
+    register(Style.cardView) { (view: UIView) in
       view.layer.masksToBounds = false
       view.layer.shadowColor = UIColor.black.cgColor
       view.layer.shadowOffset = CGSize(width: 0, height: 0.5)
