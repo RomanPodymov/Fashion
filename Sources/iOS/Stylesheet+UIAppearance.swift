@@ -8,7 +8,7 @@ public extension Stylesheet {
 
    - Parameter stylization: Closure where you can apply styles.
    */
-  public func shareAppearance<T: Styleable>(_ stylization: (T) -> Void) {
+  func shareAppearance<T: Styleable>(_ stylization: (T) -> Void) {
     stylization(T.appearance())
   }
 }

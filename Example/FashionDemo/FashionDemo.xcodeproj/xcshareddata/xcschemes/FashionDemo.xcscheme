@@ -14,10 +14,10 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D5B2E89E1C3A780C00C0327D"
-               BuildableName = "Fashion.framework"
-               BlueprintName = "Fashion-iOS"
-               ReferencedContainer = "container:Fashion.xcodeproj">
+               BlueprintIdentifier = "D5C7F73F1C3BC9CE008CDDBA"
+               BuildableName = "FashionDemo.app"
+               BlueprintName = "FashionDemo"
+               ReferencedContainer = "container:FashionDemo.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -27,26 +27,7 @@
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
       shouldUseLaunchSchemeArgsEnv = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D5B2E89E1C3A780C00C0327D"
-            BuildableName = "Fashion.framework"
-            BlueprintName = "Fashion-iOS"
-            ReferencedContainer = "container:Fashion.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "D5B2E8A81C3A780C00C0327D"
-               BuildableName = "Fashion-Tests-iOS.xctest"
-               BlueprintName = "Fashion-iOS-Tests"
-               ReferencedContainer = "container:Fashion.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
@@ -59,15 +40,16 @@
       debugDocumentVersioning = "YES"
       debugServiceExtension = "internal"
       allowLocationSimulation = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D5B2E89E1C3A780C00C0327D"
-            BuildableName = "Fashion.framework"
-            BlueprintName = "Fashion-iOS"
-            ReferencedContainer = "container:Fashion.xcodeproj">
+            BlueprintIdentifier = "D5C7F73F1C3BC9CE008CDDBA"
+            BuildableName = "FashionDemo.app"
+            BlueprintName = "FashionDemo"
+            ReferencedContainer = "container:FashionDemo.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -75,15 +57,16 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "D5B2E89E1C3A780C00C0327D"
-            BuildableName = "Fashion.framework"
-            BlueprintName = "Fashion-iOS"
-            ReferencedContainer = "container:Fashion.xcodeproj">
+            BlueprintIdentifier = "D5C7F73F1C3BC9CE008CDDBA"
+            BuildableName = "FashionDemo.app"
+            BlueprintName = "FashionDemo"
+            ReferencedContainer = "container:FashionDemo.xcodeproj">
          </BuildableReference>
-      </MacroExpansion>
+      </BuildableProductRunnable>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">

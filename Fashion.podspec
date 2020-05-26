@@ -11,8 +11,8 @@ Pod::Spec.new do |s|
   }
   s.social_media_url = 'https://twitter.com/vadymmarkov'
 
-  s.ios.deployment_target = '8.0'
-  s.osx.deployment_target = '10.10'
+  s.ios.deployment_target = '12.0'
+  s.osx.deployment_target = '10.12'
   s.tvos.deployment_target = '9.0'
 
   s.requires_arc = true
@@ -24,6 +24,6 @@ Pod::Spec.new do |s|
   s.tvos.frameworks = 'UIKit', 'Foundation'
   s.osx.frameworks = 'Cocoa', 'Foundation'
 
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '3.0' }
+  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
 
 end

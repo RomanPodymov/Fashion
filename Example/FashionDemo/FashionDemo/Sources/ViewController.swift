@@ -2,7 +2,7 @@ import UIKit
 import Fashion
 
 final class ViewController: UIViewController {
-  lazy var cardView = UIView(styles: "content-view card-view")
+  lazy var cardView = UIView(styles: [Style.contentView, Style.cardView])
   
   lazy var label: UILabel = {
     let label = UILabel()
@@ -14,7 +14,7 @@ final class ViewController: UIViewController {
     super.viewDidLoad()
     
     title = "Fashion"    
-    view.styles = "content-view"
+    view.apply(styles: Style.contentView)
     
     view.addSubview(cardView)
     cardView.addSubview(label)
