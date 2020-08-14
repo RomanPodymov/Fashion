@@ -24,6 +24,6 @@ Pod::Spec.new do |s|
   s.tvos.frameworks = 'UIKit', 'Foundation'
   s.osx.frameworks = 'Cocoa', 'Foundation'
 
-  s.pod_target_xcconfig = { 'SWIFT_VERSION' => '5.0' }
+  s.swift_versions = ['5.0']
 
 end
