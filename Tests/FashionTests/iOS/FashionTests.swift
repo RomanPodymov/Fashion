@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import XCTest
 import UIKit
 @testable import Fashion
@@ -20,3 +21,4 @@ final class FashionTests: XCTestCase {
     XCTAssertNotNil(Stylist.master.styles[stylesheet.style])
   }
 }
+#endif

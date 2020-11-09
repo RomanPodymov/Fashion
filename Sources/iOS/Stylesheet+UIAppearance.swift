@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import UIKit
 
 public extension Stylesheet {
@@ -12,3 +13,4 @@ public extension Stylesheet {
     stylization(T.appearance())
   }
 }
+#endif

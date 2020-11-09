@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import UIKit
 @testable import Fashion
 
@@ -23,3 +24,4 @@ final class Button: UIButton {
     }
   }
 }
+#endif

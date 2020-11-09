@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import XCTest
 import UIKit
 @testable import Fashion
@@ -86,3 +87,4 @@ final class StyleTests: XCTestCase {
     XCTAssertEqual(view.backgroundColor, UIColor.red)
   }
 }
+#endif
