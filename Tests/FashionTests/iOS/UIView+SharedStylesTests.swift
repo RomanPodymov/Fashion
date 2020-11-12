@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import XCTest
 import UIKit
 @testable import Fashion
@@ -47,7 +48,6 @@ final class UIViewSharedStylesTests: XCTestCase {
 
     XCTAssertEqual(textView.backgroundColor, UIColor.yellow)
     XCTAssertEqual(textView.tintColor, UIColor.red)
-    XCTAssertNil(textView.textColor)
     XCTAssertEqual(textView.layer.borderWidth, 3)
 
     let button = Button()
@@ -86,3 +86,4 @@ final class UIViewSharedStylesTests: XCTestCase {
     XCTAssertNotEqual(label.layer.borderWidth, 2)
   }
 }
+#endif

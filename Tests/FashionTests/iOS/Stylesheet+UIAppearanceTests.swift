@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import XCTest
 import UIKit
 @testable import Fashion
@@ -20,3 +21,4 @@ final class StylesheetUIAppearanceTests: XCTestCase {
     XCTAssertEqual(UINavigationBar.appearance().alpha, 0.5)
   }
 }
+#endif

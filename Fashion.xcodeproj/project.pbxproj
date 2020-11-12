@@ -155,6 +155,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C79AC60D2559865D003DF3A7 /* Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D5A516C71C98127E00B5442D /* FashionTests */,
+			);
+			path = Tests;
+			sourceTree = "<group>";
+		};
 		D5A516C21C98125100B5442D /* Fashion */ = {
 			isa = PBXGroup;
 			children = (
@@ -215,7 +223,7 @@
 				D500FD121C3AAC8E00782D78 /* Playground-Mac.playground */,
 				D5C629691C3A809D007F7B7C /* Sources */,
 				D5A516C21C98125100B5442D /* Fashion */,
-				D5A516C71C98127E00B5442D /* FashionTests */,
+				C79AC60D2559865D003DF3A7 /* Tests */,
 				D5B2E8A01C3A780C00C0327D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -679,7 +687,7 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "FashionTests/Info-tvOS.plist";
+				INFOPLIST_FILE = "Tests/FashionTests/Info-tvOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadymmarkov.Fashion-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -699,7 +707,7 @@
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "FashionTests/Info-tvOS.plist";
+				INFOPLIST_FILE = "Tests/FashionTests/Info-tvOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.vadymmarkov.Fashion-tvOSTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -874,7 +882,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "$(SRCROOT)/FashionTests/Info-iOS.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/FashionTests/Info-iOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.FashionTests;
 				PRODUCT_NAME = "Fashion-Tests-iOS";
@@ -889,7 +897,7 @@
 			buildSettings = {
 				CLANG_ENABLE_MODULES = YES;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
-				INFOPLIST_FILE = "$(SRCROOT)/FashionTests/Info-iOS.plist";
+				INFOPLIST_FILE = "$(SRCROOT)/Tests/FashionTests/Info-iOS.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = no.hyper.FashionTests;
 				PRODUCT_NAME = "Fashion-Tests-iOS";

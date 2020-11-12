@@ -1,3 +1,4 @@
+#if canImport(UIKit)
 import XCTest
 import UIKit
 @testable import Fashion
@@ -47,3 +48,4 @@ final class StyleableTests: XCTestCase {
     XCTAssertEqual(label.numberOfLines, 10)
   }
 }
+#endif
