@@ -1,5 +1,5 @@
 PODS:
-  - Fashion (4.0.0)
+  - Fashion (4.1.0)
 
 DEPENDENCIES:
   - Fashion (from `../../`)
@@ -9,8 +9,8 @@ EXTERNAL SOURCES:
     :path: "../../"
 
 SPEC CHECKSUMS:
-  Fashion: 925e74ae5b7f1f18b53d8b9e098e644a95ba03a1
+  Fashion: 1e9b314a570c4466974f10849acb5a29986135a4
 
 PODFILE CHECKSUM: 97047e2bbe6cac764963f0b67a5069326d9eab4a
 
-COCOAPODS: 1.9.1
+COCOAPODS: 1.10.0
