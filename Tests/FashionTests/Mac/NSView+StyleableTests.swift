@@ -1,10 +1,10 @@
-#if canImport(UIKit)
+#if os(macOS)
+import Cocoa
 import XCTest
-import UIKit
 @testable import Fashion
 
-final class UIViewStyleableTests: XCTestCase {
-  var label: UILabel!
+final class NSViewStyleableTests: XCTestCase {
+  var label: NSTextField!
 
   override func setUp() {
     super.setUp()
@@ -12,16 +12,16 @@ final class UIViewStyleableTests: XCTestCase {
     label = .init()
     label.backgroundColor = .red
     label.textColor = .white
-    label.numberOfLines = 2
+    label.maximumNumberOfLines = 2
 
-    Stylist.master.register("label-1") { (label: UILabel) in
+    Stylist.master.register("label-1") { (label: NSTextField) in
       label.textColor = .red
-      label.numberOfLines = 10
+      label.maximumNumberOfLines = 10
     }
 
-    Stylist.master.register("label-2") { (label: UILabel) in
+    Stylist.master.register("label-2") { (label: NSTextField) in
       label.backgroundColor = .yellow
-      label.numberOfLines = 3
+      label.maximumNumberOfLines = 3
     }
   }
 
@@ -33,11 +33,12 @@ final class UIViewStyleableTests: XCTestCase {
 
   func testInitFrameStyles() {
     // It applies styles
-    label = UILabel(styles: "label-1 label-2")
+    label = .init()
+    label.apply(styles: "label-1 label-2")
 
     XCTAssertEqual(label.backgroundColor, .yellow)
     XCTAssertEqual(label.textColor, .red)
-    XCTAssertEqual(label.numberOfLines, 3)
+    XCTAssertEqual(label.maximumNumberOfLines, 3)
   }
 
   func testApplyStylesWithRegisteredStyles() {
@@ -46,16 +47,16 @@ final class UIViewStyleableTests: XCTestCase {
 
     XCTAssertEqual(label.backgroundColor, .yellow)
     XCTAssertEqual(label.textColor, .red)
-    XCTAssertEqual(label.numberOfLines, 3)
+    XCTAssertEqual(label.maximumNumberOfLines, 3)
   }
-
+    
   func testApplyStylesAsArrayWithRegisteredStyles() {
     // It applies previously registered styles
     label.apply(styles: ["label-1", "label-2"])
 
     XCTAssertEqual(label.backgroundColor, .yellow)
     XCTAssertEqual(label.textColor, .red)
-    XCTAssertEqual(label.numberOfLines, 3)
+    XCTAssertEqual(label.maximumNumberOfLines, 3)
   }
 
   func testApplyStylesWithNotRegisteredStyles() {
@@ -64,7 +65,7 @@ final class UIViewStyleableTests: XCTestCase {
 
     XCTAssertEqual(label.backgroundColor, .red)
     XCTAssertEqual(label.textColor, .white)
-    XCTAssertEqual(label.numberOfLines, 2)
+    XCTAssertEqual(label.maximumNumberOfLines, 2)
   }
 
   func testApplyStylesAsArrayWithNotRegisteredStyles() {
@@ -73,9 +74,9 @@ final class UIViewStyleableTests: XCTestCase {
 
     XCTAssertEqual(label.backgroundColor, .red)
     XCTAssertEqual(label.textColor, .white)
-    XCTAssertEqual(label.numberOfLines, 2)
+    XCTAssertEqual(label.maximumNumberOfLines, 2)
   }
-
+    
   func testStylesGetter() {
     // It returns a style that has been previously set
     label.styles = "label-1"
@@ -88,7 +89,7 @@ final class UIViewStyleableTests: XCTestCase {
 
     XCTAssertEqual(label.backgroundColor, .red)
     XCTAssertEqual(label.textColor, .red)
-    XCTAssertEqual(label.numberOfLines, 10)
+    XCTAssertEqual(label.maximumNumberOfLines, 10)
   }
 
   func testStylesWithSingleNotRegisteredStyle() {
@@ -97,7 +98,7 @@ final class UIViewStyleableTests: XCTestCase {
 
     XCTAssertEqual(label.backgroundColor, .red)
     XCTAssertEqual(label.textColor, .white)
-    XCTAssertEqual(label.numberOfLines, 2)
+    XCTAssertEqual(label.maximumNumberOfLines, 2)
   }
 
   func testStylesWithMultipleRegisteredStyles() {
@@ -106,7 +107,7 @@ final class UIViewStyleableTests: XCTestCase {
 
     XCTAssertEqual(label.backgroundColor, .yellow)
     XCTAssertEqual(label.textColor, .red)
-    XCTAssertEqual(label.numberOfLines, 3)
+    XCTAssertEqual(label.maximumNumberOfLines, 3)
   }
 
   func testStylesWithMultipleNotRegisteredStyle() {
@@ -115,7 +116,7 @@ final class UIViewStyleableTests: XCTestCase {
 
     XCTAssertEqual(label.backgroundColor, .red)
     XCTAssertEqual(label.textColor, .white)
-    XCTAssertEqual(label.numberOfLines, 2)
+    XCTAssertEqual(label.maximumNumberOfLines, 2)
   }
 }
 #endif
