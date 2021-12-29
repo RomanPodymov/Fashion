@@ -8,12 +8,22 @@ extension UIView {
 
   public convenience init(frame: CGRect = CGRect.zero, styles: [StringConvertible]) {
     self.init(frame: frame)
-    self.styles = styles.map { $0.string } .joined(separator: " ")
+    apply(styles: styles)
   }
 
   public convenience init(frame: CGRect = CGRect.zero, styles: StringConvertible) {
     self.init(frame: frame)
     apply(styles: styles)
+  }
+
+  /**
+    Applies previously registered styles.
+
+    - Parameter styles: Set of style names.
+  */
+
+  public func apply(styles: [StringConvertible]) {
+    self.styles = styles.map { $0.string } .joined(separator: " ")
   }
 
   /**
@@ -23,7 +33,7 @@ extension UIView {
    */
 
   public func apply(styles: StringConvertible...) {
-    self.styles = styles.map { $0.string } .joined(separator: " ")
+    apply(styles: styles.map { $0 })
   }
 
   /**

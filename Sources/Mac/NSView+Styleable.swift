@@ -13,13 +13,22 @@ public extension NSView {
      
      - Parameter styles: Set of style names.
      */
-    func apply(styles: StringConvertible...) {
+    func apply(styles: [StringConvertible]) {
         self.styles = styles.map { $0.string } .joined(separator: " ")
     }
     
     /**
      Applies previously registered styles.
      
+     - Parameter styles: Set of style names.
+     */
+    func apply(styles: StringConvertible...) {
+        apply(styles: styles.map { $0 })
+    }
+    
+    /**
+     Applies previously registered styles.
+    
      - Parameter styles: Single style or multiple styles separated by whitespace.
      */
     @IBInspectable var styles: String? {
