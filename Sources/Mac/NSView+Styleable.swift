@@ -7,19 +7,28 @@ public extension NSView {
     private struct AssociatedKeys {
         static var Style = "fashion_StyleAssociatedKey"
     }
-    
+
+    /**
+     Applies previously registered styles.
+     
+     - Parameter styles: Set of style names.
+     */
+    func apply(styles: [StringConvertible]) {
+        self.styles = styles.map { $0.string } .joined(separator: " ")
+    }
+
     /**
      Applies previously registered styles.
      
      - Parameter styles: Set of style names.
      */
     func apply(styles: StringConvertible...) {
-        self.styles = styles.map { $0.string } .joined(separator: " ")
+        apply(styles: styles.map { $0 })
     }
-    
+
     /**
      Applies previously registered styles.
-     
+    
      - Parameter styles: Single style or multiple styles separated by whitespace.
      */
     @IBInspectable var styles: String? {
@@ -33,7 +42,7 @@ public extension NSView {
                 newValue,
                 objc_AssociationPolicy.OBJC_ASSOCIATION_RETAIN_NONATOMIC
             )
-            
+
             if let newValue = newValue {
                 let styles = newValue.components(separatedBy: " ")
                 Stylist.master.apply(styles, model: self)

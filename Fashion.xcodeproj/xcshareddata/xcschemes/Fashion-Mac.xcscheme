@@ -37,6 +37,16 @@
          </BuildableReference>
       </MacroExpansion>
       <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "9ECB95892787AF64002850D8"
+               BuildableName = "Fashion-Mac-Tests.xctest"
+               BlueprintName = "Fashion-Mac-Tests"
+               ReferencedContainer = "container:Fashion.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
       </Testables>
    </TestAction>
    <LaunchAction
