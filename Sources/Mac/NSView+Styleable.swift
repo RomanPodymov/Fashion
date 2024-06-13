@@ -5,7 +5,7 @@ extension NSView: Styleable {}
 
 public extension NSView {
     private struct AssociatedKeys {
-        static var Style = "fashion_StyleAssociatedKey"
+        static var Style: Void?
     }
 
     /**
@@ -33,7 +33,9 @@ public extension NSView {
      */
     @IBInspectable var styles: String? {
         get {
-            return objc_getAssociatedObject(self, &AssociatedKeys.Style) as? String
+            withUnsafePointer(to: &AssociatedKeys.Style) {
+                return objc_getAssociatedObject(self, $0) as? String
+            }
         }
         set (newValue) {
             objc_setAssociatedObject(

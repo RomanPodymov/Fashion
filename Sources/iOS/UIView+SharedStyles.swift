@@ -3,7 +3,7 @@ import UIKit
 
 extension UIView {
   private struct AssociatedKeys {
-    static var stylesApplied = "fashion_StylesAppliedAssociatedKey"
+    static var stylesApplied: Void?
   }
 
   // MARK: - Method Swizzling

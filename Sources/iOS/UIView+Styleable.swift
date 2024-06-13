@@ -3,7 +3,7 @@ import UIKit
 
 extension UIView {
   private struct AssociatedKeys {
-    static var Style = "fashion_StyleAssociatedKey"
+    static var Style: Void?
   }
 
   public convenience init(frame: CGRect = CGRect.zero, styles: [StringConvertible]) {
