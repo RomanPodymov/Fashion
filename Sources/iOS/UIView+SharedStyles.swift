@@ -47,7 +47,9 @@ extension UIView {
 
   private var stylesApplied: Bool? {
     get {
-      return objc_getAssociatedObject(self, &AssociatedKeys.stylesApplied) as? Bool
+      withUnsafePointer(to: &AssociatedKeys.stylesApplied) {
+        objc_getAssociatedObject(self, $0) as? Bool
+      }
     }
     set (newValue) {
       objc_setAssociatedObject(
